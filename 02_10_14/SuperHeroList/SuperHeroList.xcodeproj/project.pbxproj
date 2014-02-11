@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FAE971B18A99BB100245ECF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAE971A18A99BB100245ECF /* UIKit.framework */; };
+		3FAE971D18A99BB100245ECF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAE971C18A99BB100245ECF /* Foundation.framework */; };
+		3FAE971F18A99BB100245ECF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAE971E18A99BB100245ECF /* CoreGraphics.framework */; };
+		3FAE972518A99BB100245ECF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE972318A99BB100245ECF /* InfoPlist.strings */; };
+		3FAE972718A99BB100245ECF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE972618A99BB100245ECF /* main.m */; };
+		3FAE972B18A99BB100245ECF /* SuperheroAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE972A18A99BB100245ECF /* SuperheroAppDelegate.m */; };
+		3FAE972D18A99BB100245ECF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE972C18A99BB100245ECF /* Default.png */; };
+		3FAE972F18A99BB100245ECF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE972E18A99BB100245ECF /* Default@2x.png */; };
+		3FAE973118A99BB100245ECF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE973018A99BB100245ECF /* Default-568h@2x.png */; };
+		3FAE973418A99BB100245ECF /* SuperheroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE973318A99BB100245ECF /* SuperheroViewController.m */; };
+		3FAE973718A99BB100245ECF /* SuperheroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE973518A99BB100245ECF /* SuperheroViewController.xib */; };
+		3FAE974018A99C8B00245ECF /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE973E18A99C8B00245ECF /* AboutViewController.m */; };
+		3FAE974118A99C8B00245ECF /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE973F18A99C8B00245ECF /* AboutViewController.xib */; };
+		3FAE974818A9ABB400245ECF /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE974618A9ABB400245ECF /* ListViewController.m */; };
+		3FAE974918A9ABB400245ECF /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE974718A9ABB400245ECF /* ListViewController.xib */; };
+		3FAE974C18A9AD5100245ECF /* superhero.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE974B18A9AD5100245ECF /* superhero.m */; };
+		3FAE974E18A9B3A200245ECF /* ironman.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE974D18A9B3A200245ECF /* ironman.jpeg */; };
+		3FAE975018A9B3AC00245ECF /* thor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE974F18A9B3AC00245ECF /* thor.jpg */; };
+		3FAE975418A9BA5800245ECF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE975218A9BA5800245ECF /* DetailViewController.m */; };
+		3FAE975518A9BA5800245ECF /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE975318A9BA5800245ECF /* DetailViewController.xib */; };
+		3FAE975918A9C6E700245ECF /* face.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FAE975818A9C6E700245ECF /* face.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3FAE971618A99BB100245ECF /* SuperHeroList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperHeroList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FAE971A18A99BB100245ECF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3FAE971C18A99BB100245ECF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3FAE971E18A99BB100245ECF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3FAE972218A99BB100245ECF /* SuperHeroList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SuperHeroList-Info.plist"; sourceTree = "<group>"; };
+		3FAE972418A99BB100245ECF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FAE972618A99BB100245ECF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FAE972818A99BB100245ECF /* SuperHeroList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SuperHeroList-Prefix.pch"; sourceTree = "<group>"; };
+		3FAE972918A99BB100245ECF /* SuperheroAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperheroAppDelegate.h; sourceTree = "<group>"; };
+		3FAE972A18A99BB100245ECF /* SuperheroAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperheroAppDelegate.m; sourceTree = "<group>"; };
+		3FAE972C18A99BB100245ECF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3FAE972E18A99BB100245ECF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3FAE973018A99BB100245ECF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3FAE973218A99BB100245ECF /* SuperheroViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperheroViewController.h; sourceTree = "<group>"; };
+		3FAE973318A99BB100245ECF /* SuperheroViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperheroViewController.m; sourceTree = "<group>"; };
+		3FAE973618A99BB100245ECF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SuperheroViewController.xib; sourceTree = "<group>"; };
+		3FAE973D18A99C8B00245ECF /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		3FAE973E18A99C8B00245ECF /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		3FAE973F18A99C8B00245ECF /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		3FAE974518A9ABB400245ECF /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		3FAE974618A9ABB400245ECF /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		3FAE974718A9ABB400245ECF /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		3FAE974A18A9AD5100245ECF /* superhero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = superhero.h; sourceTree = "<group>"; };
+		3FAE974B18A9AD5100245ECF /* superhero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = superhero.m; sourceTree = "<group>"; };
+		3FAE974D18A9B3A200245ECF /* ironman.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ironman.jpeg; sourceTree = "<group>"; };
+		3FAE974F18A9B3AC00245ECF /* thor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thor.jpg; sourceTree = "<group>"; };
+		3FAE975118A9BA5800245ECF /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		3FAE975218A9BA5800245ECF /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		3FAE975318A9BA5800245ECF /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		3FAE975818A9C6E700245ECF /* face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FAE971318A99BB100245ECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FAE971B18A99BB100245ECF /* UIKit.framework in Frameworks */,
+				3FAE971D18A99BB100245ECF /* Foundation.framework in Frameworks */,
+				3FAE971F18A99BB100245ECF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FAE970B18A99BB100245ECF = {
+			isa = PBXGroup;
+			children = (
+				3FAE975818A9C6E700245ECF /* face.png */,
+				3FAE972018A99BB100245ECF /* SuperHeroList */,
+				3FAE971918A99BB100245ECF /* Frameworks */,
+				3FAE971718A99BB100245ECF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FAE971718A99BB100245ECF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FAE971618A99BB100245ECF /* SuperHeroList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FAE971918A99BB100245ECF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FAE971A18A99BB100245ECF /* UIKit.framework */,
+				3FAE971C18A99BB100245ECF /* Foundation.framework */,
+				3FAE971E18A99BB100245ECF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FAE972018A99BB100245ECF /* SuperHeroList */ = {
+			isa = PBXGroup;
+			children = (
+				3FAE974F18A9B3AC00245ECF /* thor.jpg */,
+				3FAE974D18A9B3A200245ECF /* ironman.jpeg */,
+				3FAE974418A99CD600245ECF /* Model */,
+				3FAE974318A99CD000245ECF /* View */,
+				3FAE974218A99C9C00245ECF /* Controller */,
+				3FAE972918A99BB100245ECF /* SuperheroAppDelegate.h */,
+				3FAE972A18A99BB100245ECF /* SuperheroAppDelegate.m */,
+				3FAE972118A99BB100245ECF /* Supporting Files */,
+			);
+			path = SuperHeroList;
+			sourceTree = "<group>";
+		};
+		3FAE972118A99BB100245ECF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FAE972218A99BB100245ECF /* SuperHeroList-Info.plist */,
+				3FAE972318A99BB100245ECF /* InfoPlist.strings */,
+				3FAE972618A99BB100245ECF /* main.m */,
+				3FAE972818A99BB100245ECF /* SuperHeroList-Prefix.pch */,
+				3FAE972C18A99BB100245ECF /* Default.png */,
+				3FAE972E18A99BB100245ECF /* Default@2x.png */,
+				3FAE973018A99BB100245ECF /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FAE974218A99C9C00245ECF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3FAE973218A99BB100245ECF /* SuperheroViewController.h */,
+				3FAE973318A99BB100245ECF /* SuperheroViewController.m */,
+				3FAE973D18A99C8B00245ECF /* AboutViewController.h */,
+				3FAE973E18A99C8B00245ECF /* AboutViewController.m */,
+				3FAE974518A9ABB400245ECF /* ListViewController.h */,
+				3FAE974618A9ABB400245ECF /* ListViewController.m */,
+				3FAE975118A9BA5800245ECF /* DetailViewController.h */,
+				3FAE975218A9BA5800245ECF /* DetailViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3FAE974318A99CD000245ECF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FAE974718A9ABB400245ECF /* ListViewController.xib */,
+				3FAE973F18A99C8B00245ECF /* AboutViewController.xib */,
+				3FAE973518A99BB100245ECF /* SuperheroViewController.xib */,
+				3FAE975318A9BA5800245ECF /* DetailViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3FAE974418A99CD600245ECF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FAE974A18A9AD5100245ECF /* superhero.h */,
+				3FAE974B18A9AD5100245ECF /* superhero.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FAE971518A99BB100245ECF /* SuperHeroList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FAE973A18A99BB100245ECF /* Build configuration list for PBXNativeTarget "SuperHeroList" */;
+			buildPhases = (
+				3FAE971218A99BB100245ECF /* Sources */,
+				3FAE971318A99BB100245ECF /* Frameworks */,
+				3FAE971418A99BB100245ECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperHeroList;
+			productName = SuperHeroList;
+			productReference = 3FAE971618A99BB100245ECF /* SuperHeroList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FAE970D18A99BB100245ECF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Superhero;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = FVTC;
+			};
+			buildConfigurationList = 3FAE971018A99BB100245ECF /* Build configuration list for PBXProject "SuperHeroList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3FAE970B18A99BB100245ECF;
+			productRefGroup = 3FAE971718A99BB100245ECF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FAE971518A99BB100245ECF /* SuperHeroList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FAE971418A99BB100245ECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FAE972518A99BB100245ECF /* InfoPlist.strings in Resources */,
+				3FAE972D18A99BB100245ECF /* Default.png in Resources */,
+				3FAE972F18A99BB100245ECF /* Default@2x.png in Resources */,
+				3FAE973118A99BB100245ECF /* Default-568h@2x.png in Resources */,
+				3FAE973718A99BB100245ECF /* SuperheroViewController.xib in Resources */,
+				3FAE974118A99C8B00245ECF /* AboutViewController.xib in Resources */,
+				3FAE974918A9ABB400245ECF /* ListViewController.xib in Resources */,
+				3FAE974E18A9B3A200245ECF /* ironman.jpeg in Resources */,
+				3FAE975018A9B3AC00245ECF /* thor.jpg in Resources */,
+				3FAE975518A9BA5800245ECF /* DetailViewController.xib in Resources */,
+				3FAE975918A9C6E700245ECF /* face.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FAE971218A99BB100245ECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FAE972718A99BB100245ECF /* main.m in Sources */,
+				3FAE972B18A99BB100245ECF /* SuperheroAppDelegate.m in Sources */,
+				3FAE973418A99BB100245ECF /* SuperheroViewController.m in Sources */,
+				3FAE974018A99C8B00245ECF /* AboutViewController.m in Sources */,
+				3FAE974818A9ABB400245ECF /* ListViewController.m in Sources */,
+				3FAE974C18A9AD5100245ECF /* superhero.m in Sources */,
+				3FAE975418A9BA5800245ECF /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3FAE972318A99BB100245ECF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FAE972418A99BB100245ECF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3FAE973518A99BB100245ECF /* SuperheroViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FAE973618A99BB100245ECF /* en */,
+			);
+			name = SuperheroViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FAE973818A99BB100245ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3FAE973918A99BB100245ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FAE973B18A99BB100245ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperHeroList/SuperHeroList-Prefix.pch";
+				INFOPLIST_FILE = "SuperHeroList/SuperHeroList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3FAE973C18A99BB100245ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperHeroList/SuperHeroList-Prefix.pch";
+				INFOPLIST_FILE = "SuperHeroList/SuperHeroList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FAE971018A99BB100245ECF /* Build configuration list for PBXProject "SuperHeroList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FAE973818A99BB100245ECF /* Debug */,
+				3FAE973918A99BB100245ECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FAE973A18A99BB100245ECF /* Build configuration list for PBXNativeTarget "SuperHeroList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FAE973B18A99BB100245ECF /* Debug */,
+				3FAE973C18A99BB100245ECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FAE970D18A99BB100245ECF /* Project object */;
+}
