@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FF0797218B2D566007309C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF0797118B2D566007309C9 /* UIKit.framework */; };
+		3FF0797418B2D566007309C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF0797318B2D566007309C9 /* Foundation.framework */; };
+		3FF0797618B2D566007309C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF0797518B2D566007309C9 /* CoreGraphics.framework */; };
+		3FF0797C18B2D566007309C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FF0797A18B2D566007309C9 /* InfoPlist.strings */; };
+		3FF0797E18B2D566007309C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0797D18B2D566007309C9 /* main.m */; };
+		3FF0798218B2D566007309C9 /* SlotMachineAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0798118B2D566007309C9 /* SlotMachineAppDelegate.m */; };
+		3FF0798418B2D566007309C9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FF0798318B2D566007309C9 /* Default.png */; };
+		3FF0798618B2D566007309C9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FF0798518B2D566007309C9 /* Default@2x.png */; };
+		3FF0798818B2D566007309C9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FF0798718B2D566007309C9 /* Default-568h@2x.png */; };
+		3FF0798B18B2D566007309C9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF0798918B2D566007309C9 /* MainStoryboard.storyboard */; };
+		3FF0798E18B2D566007309C9 /* SlotMachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0798D18B2D566007309C9 /* SlotMachineViewController.m */; };
+		3FF079A418B2F26E007309C9 /* bar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FF0799E18B2F26E007309C9 /* bar.jpg */; };
+		3FF079A518B2F26E007309C9 /* bell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FF0799F18B2F26E007309C9 /* bell.jpg */; };
+		3FF079A618B2F26E007309C9 /* cherry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FF079A018B2F26E007309C9 /* cherry.jpg */; };
+		3FF079A718B2F26E007309C9 /* grape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FF079A118B2F26E007309C9 /* grape.jpg */; };
+		3FF079A818B2F26E007309C9 /* orange.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FF079A218B2F26E007309C9 /* orange.jpg */; };
+		3FF079A918B2F26E007309C9 /* seven.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FF079A318B2F26E007309C9 /* seven.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3FF0796D18B2D566007309C9 /* SlotMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlotMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF0797118B2D566007309C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3FF0797318B2D566007309C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3FF0797518B2D566007309C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3FF0797918B2D566007309C9 /* SlotMachine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlotMachine-Info.plist"; sourceTree = "<group>"; };
+		3FF0797B18B2D566007309C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FF0797D18B2D566007309C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FF0797F18B2D566007309C9 /* SlotMachine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlotMachine-Prefix.pch"; sourceTree = "<group>"; };
+		3FF0798018B2D566007309C9 /* SlotMachineAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlotMachineAppDelegate.h; sourceTree = "<group>"; };
+		3FF0798118B2D566007309C9 /* SlotMachineAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlotMachineAppDelegate.m; sourceTree = "<group>"; };
+		3FF0798318B2D566007309C9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3FF0798518B2D566007309C9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3FF0798718B2D566007309C9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3FF0798A18B2D566007309C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		3FF0798C18B2D566007309C9 /* SlotMachineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlotMachineViewController.h; sourceTree = "<group>"; };
+		3FF0798D18B2D566007309C9 /* SlotMachineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlotMachineViewController.m; sourceTree = "<group>"; };
+		3FF0799E18B2F26E007309C9 /* bar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bar.jpg; sourceTree = "<group>"; };
+		3FF0799F18B2F26E007309C9 /* bell.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bell.jpg; sourceTree = "<group>"; };
+		3FF079A018B2F26E007309C9 /* cherry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cherry.jpg; sourceTree = "<group>"; };
+		3FF079A118B2F26E007309C9 /* grape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grape.jpg; sourceTree = "<group>"; };
+		3FF079A218B2F26E007309C9 /* orange.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = orange.jpg; sourceTree = "<group>"; };
+		3FF079A318B2F26E007309C9 /* seven.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seven.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FF0796A18B2D566007309C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF0797218B2D566007309C9 /* UIKit.framework in Frameworks */,
+				3FF0797418B2D566007309C9 /* Foundation.framework in Frameworks */,
+				3FF0797618B2D566007309C9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FF0796218B2D565007309C9 = {
+			isa = PBXGroup;
+			children = (
+				3FF0797718B2D566007309C9 /* SlotMachine */,
+				3FF0797018B2D566007309C9 /* Frameworks */,
+				3FF0796E18B2D566007309C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FF0796E18B2D566007309C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FF0796D18B2D566007309C9 /* SlotMachine.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FF0797018B2D566007309C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FF0797118B2D566007309C9 /* UIKit.framework */,
+				3FF0797318B2D566007309C9 /* Foundation.framework */,
+				3FF0797518B2D566007309C9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FF0797718B2D566007309C9 /* SlotMachine */ = {
+			isa = PBXGroup;
+			children = (
+				3FF0799E18B2F26E007309C9 /* bar.jpg */,
+				3FF0799F18B2F26E007309C9 /* bell.jpg */,
+				3FF079A018B2F26E007309C9 /* cherry.jpg */,
+				3FF079A118B2F26E007309C9 /* grape.jpg */,
+				3FF079A218B2F26E007309C9 /* orange.jpg */,
+				3FF079A318B2F26E007309C9 /* seven.jpg */,
+				3FF0798018B2D566007309C9 /* SlotMachineAppDelegate.h */,
+				3FF0798118B2D566007309C9 /* SlotMachineAppDelegate.m */,
+				3FF0798918B2D566007309C9 /* MainStoryboard.storyboard */,
+				3FF0798C18B2D566007309C9 /* SlotMachineViewController.h */,
+				3FF0798D18B2D566007309C9 /* SlotMachineViewController.m */,
+				3FF0797818B2D566007309C9 /* Supporting Files */,
+			);
+			path = SlotMachine;
+			sourceTree = "<group>";
+		};
+		3FF0797818B2D566007309C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FF0797918B2D566007309C9 /* SlotMachine-Info.plist */,
+				3FF0797A18B2D566007309C9 /* InfoPlist.strings */,
+				3FF0797D18B2D566007309C9 /* main.m */,
+				3FF0797F18B2D566007309C9 /* SlotMachine-Prefix.pch */,
+				3FF0798318B2D566007309C9 /* Default.png */,
+				3FF0798518B2D566007309C9 /* Default@2x.png */,
+				3FF0798718B2D566007309C9 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FF0796C18B2D566007309C9 /* SlotMachine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FF0799118B2D566007309C9 /* Build configuration list for PBXNativeTarget "SlotMachine" */;
+			buildPhases = (
+				3FF0796918B2D566007309C9 /* Sources */,
+				3FF0796A18B2D566007309C9 /* Frameworks */,
+				3FF0796B18B2D566007309C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlotMachine;
+			productName = SlotMachine;
+			productReference = 3FF0796D18B2D566007309C9 /* SlotMachine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FF0796418B2D565007309C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SlotMachine;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = FVTC;
+			};
+			buildConfigurationList = 3FF0796718B2D565007309C9 /* Build configuration list for PBXProject "SlotMachine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3FF0796218B2D565007309C9;
+			productRefGroup = 3FF0796E18B2D566007309C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FF0796C18B2D566007309C9 /* SlotMachine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FF0796B18B2D566007309C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF0797C18B2D566007309C9 /* InfoPlist.strings in Resources */,
+				3FF0798418B2D566007309C9 /* Default.png in Resources */,
+				3FF0798618B2D566007309C9 /* Default@2x.png in Resources */,
+				3FF0798818B2D566007309C9 /* Default-568h@2x.png in Resources */,
+				3FF0798B18B2D566007309C9 /* MainStoryboard.storyboard in Resources */,
+				3FF079A418B2F26E007309C9 /* bar.jpg in Resources */,
+				3FF079A518B2F26E007309C9 /* bell.jpg in Resources */,
+				3FF079A618B2F26E007309C9 /* cherry.jpg in Resources */,
+				3FF079A718B2F26E007309C9 /* grape.jpg in Resources */,
+				3FF079A818B2F26E007309C9 /* orange.jpg in Resources */,
+				3FF079A918B2F26E007309C9 /* seven.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FF0796918B2D566007309C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF0797E18B2D566007309C9 /* main.m in Sources */,
+				3FF0798218B2D566007309C9 /* SlotMachineAppDelegate.m in Sources */,
+				3FF0798E18B2D566007309C9 /* SlotMachineViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3FF0797A18B2D566007309C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FF0797B18B2D566007309C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3FF0798918B2D566007309C9 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FF0798A18B2D566007309C9 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FF0798F18B2D566007309C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3FF0799018B2D566007309C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FF0799218B2D566007309C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlotMachine/SlotMachine-Prefix.pch";
+				INFOPLIST_FILE = "SlotMachine/SlotMachine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3FF0799318B2D566007309C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlotMachine/SlotMachine-Prefix.pch";
+				INFOPLIST_FILE = "SlotMachine/SlotMachine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FF0796718B2D565007309C9 /* Build configuration list for PBXProject "SlotMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF0798F18B2D566007309C9 /* Debug */,
+				3FF0799018B2D566007309C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FF0799118B2D566007309C9 /* Build configuration list for PBXNativeTarget "SlotMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF0799218B2D566007309C9 /* Debug */,
+				3FF0799318B2D566007309C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FF0796418B2D565007309C9 /* Project object */;
+}
