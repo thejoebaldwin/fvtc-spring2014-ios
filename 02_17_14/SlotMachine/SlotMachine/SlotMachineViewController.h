@@ -16,10 +16,8 @@
 {
     NSMutableArray *_pickerItems;
     NSMutableArray *_slotContents;
-
-
-    
 }
+
 
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 - (IBAction)SpinButtonClick:(id)sender;
