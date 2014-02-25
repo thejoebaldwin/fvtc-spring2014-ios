@@ -81,18 +81,40 @@
 +(Superhero*) RandomSuperhero
 {
     //data for generating randoms
-    NSArray *firstNames = [[NSArray alloc] initWithObjects:@"Joe",
+    NSArray *firstSecrets = [[NSArray alloc] initWithObjects:@"Joe",
                            @"Rick",
                            @"Jon",
                            @"Carl",
                            @"Suzy",
                            nil];
-    NSArray *lastNames = [[NSArray alloc] initWithObjects:@"Thompson",
+    NSArray *lastSecrets = [[NSArray alloc] initWithObjects:@"Thompson",
                           @"Richards",
                           @"Stevenson",
                           @"Smith",
                           @"Jones",
                           nil];
+
+    NSArray *firstNames = [[NSArray alloc] initWithObjects:@"Dark",
+                             @"Liquid",
+                             @"King",
+                             @"Professor",
+                             @"Ms.",
+                             @"Mr.",
+                             @"Golden",
+                             nil];
+    
+    NSArray *lastNames = [[NSArray alloc] initWithObjects:@"Dragon",
+                            @"Robot",
+                            @"Ninja",
+                            @"Pirate",
+                            @"Unicorn",
+                            @"Volcano",
+                            @"Tornado",
+                            @"Earthquake",
+                            @"Skeleton",
+                            nil];
+
+    
     
     NSArray *firstPowers = [[NSArray alloc] initWithObjects:@"Super",
                           @"Cold",
@@ -113,24 +135,34 @@
     Superhero *tempHero = [[Superhero alloc] init];
     
     //random numbers to pick
-    int first = rand() % 5;
-    int second = rand() % 5;
+    int first = rand() % [firstSecrets count];
+    int second = rand() % [lastSecrets count];
+    
+    //generate the name
+    NSString *secret = [[NSString alloc] initWithFormat:@"%@ %@", [firstSecrets objectAtIndex:first],
+    [lastSecrets objectAtIndex:second]];
+    
+    
+    first = rand() % [firstNames count];
+    second = rand() % [lastNames count];
     
     //generate the name
     NSString *name = [[NSString alloc] initWithFormat:@"%@ %@", [firstNames objectAtIndex:first],
-    [lastNames objectAtIndex:second]];
+                        [lastNames objectAtIndex:second]];
+
+    [tempHero SetName:name];
     
     //random numbers to pick
 
-    first = rand() % 5;
-    second = rand() % 5;
+    first = rand() % [firstPowers count];
+    second = rand() % [lastPowers count];
     
     //generate the power
     NSString *power = [[NSString alloc] initWithFormat:@"%@ %@", [firstPowers objectAtIndex:first],
                       [lastPowers objectAtIndex:second]];
 
     
-    [tempHero SetName:name];
+    [tempHero SetSecret:secret];
     [tempHero SetPower:power];
     
     

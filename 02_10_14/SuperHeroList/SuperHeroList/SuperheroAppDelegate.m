@@ -25,13 +25,10 @@
     
     //create an array of the view controllers you want in your tab bar
     NSArray *viewControllers = [[NSArray alloc] initWithObjects:main, about, list, nil];
-    
-    
-    
+
     
     UITabBarController *nav = [[UITabBarController alloc] init];
     [nav setViewControllers: viewControllers];
-
     
     
     //self.viewController = [[SuperheroViewController alloc] initWithNibName:@"SuperheroViewController" bundle:nil];

@@ -7,6 +7,8 @@
 //
 
 #import "MainViewController.h"
+#import "SuperheroStore.h"
+
 
 @interface MainViewController ()
 
@@ -20,6 +22,31 @@
     if (self) {
         // Custom initialization
     }
+    return self;
+}
+
+
+-(void) AddItem
+{
+    //add a random superhero to the shared store
+    [[SuperheroStore SharedStore] AddSuperhero:[Superhero RandomSuperhero]];
+    //get the tableview control
+    [[self tableView] reloadData];
+}
+
+-(id) init
+{
+    self = [super init];
+    if (self)
+    {
+        //create an add button item
+        UIBarButtonItem *AddButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(AddItem)];
+        
+        //add the button to the navigation
+        [[self navigationItem] setRightBarButtonItem:AddButton];
+        
+    }
+    
     return self;
 }
 
@@ -44,16 +71,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [[SuperheroStore SharedStore] Count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -65,6 +90,11 @@
     }
     
     // Configure the cell...
+    Superhero *tempHero = [[SuperheroStore SharedStore] SuperheroAtIndex:[indexPath row]];
+    
+    NSString *display = [[NSString alloc] initWithFormat:@"%@: %@", [tempHero Name], [tempHero Power]];
+    
+    [[cell textLabel] setText:display];
     
     return cell;
 }
