@@ -19,6 +19,6 @@
 
 -(NSMutableArray*) Games;
 +(GameStore*) SharedStore;
--(void) Load;
+-(void) Load: (void(^)(void)) block;
 
 @end

@@ -55,8 +55,11 @@
     return sharedStore;
 }
 
--(void) Load
+-(void) Load:(void(^)(void)) block
 {
+    //set the completion class variable to block
+    completion = block;
+    
     _HttpData = [[NSMutableData alloc] init];
     NSURL *url = [NSURL URLWithString:@"http://mc.humboldttechgroup.com:1111/?cmd=allgames"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
@@ -74,7 +77,24 @@
 -(void) connectionDidFinishLoading:(NSURLConnection*) connection
 {
     NSString *response = [[NSString alloc] initWithData:_HttpData encoding:NSUTF8StringEncoding];
-    NSLog(@"Received Data:%@", response);
+    //NSLog(@"Received Data:%@", response);
+    
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:_HttpData options:kNilOptions error:nil];
+    //NSLog(@"%@", [json objectForKey:@"games"]);
+    
+    NSArray *games = [json objectForKey:@"games"];
+    //NSLog(@"Element[0]:%@", [games objectAtIndex:0]);
+
+    for (int i = 0; i < [games count]; i++)
+    {
+        NSDictionary *temp = [games objectAtIndex:i];
+        Game *tempGame = [[Game alloc] initWithDictionary:temp];
+        NSLog(@"tempGame:%@", tempGame);
+        [_Games addObject:tempGame];
+    }
+    //execute the code block
+    completion();
+    
 }
 
 

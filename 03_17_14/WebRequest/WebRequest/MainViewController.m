@@ -30,8 +30,8 @@
     self = [super init];
     if (self)
     {
-        [[GameStore SharedStore] Load];
-    }
+        
+         }
     return self;
 }
 
@@ -44,6 +44,14 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    void (^block)(void) = ^{
+        NSLog(@"WE CALLED THE BLOCK");
+        [[self tableView] reloadData];
+    };
+    
+    [[GameStore SharedStore] Load:block];
+
 }
 
 - (void)didReceiveMemoryWarning

@@ -63,4 +63,18 @@
     return description;
 }
 
+-(id) initWithDictionary:(NSDictionary*) dictionary
+{
+    self = [super init];
+    if (self)
+    {
+        _GameID = [[dictionary objectForKey:@"game_id"] intValue] ;
+        _WinCount = [[dictionary objectForKey:@"win_count"] intValue];
+        _WinLimit = [[dictionary objectForKey:@"win_limit"] intValue];
+        _UserCount = [[dictionary objectForKey:@"user_count"] intValue];
+        _UserLimit = [[dictionary objectForKey:@"user_limit"] intValue];
+    }
+    return self;
+}
+
 @end

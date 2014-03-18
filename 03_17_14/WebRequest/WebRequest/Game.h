@@ -16,7 +16,6 @@
     int _UserLimit;
     int _UserCount;
 }
-
 -(int) GameID;
 -(void) SetGameID:(int) gameID;
 -(int) WinLimit;
@@ -27,4 +26,6 @@
 -(void) SetUserLimit:(int) userLimit;
 -(int) UserCount;
 -(void) SetUserCount:(int) userCount;
+-(id) initWithDictionary:(NSDictionary*) dictionary;
+
 @end
