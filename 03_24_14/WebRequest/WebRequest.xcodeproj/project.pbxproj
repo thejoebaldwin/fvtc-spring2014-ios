@@ -22,8 +22,7 @@
 		3FDE783518D7B4D2009916F0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE783318D7B4D2009916F0 /* MainViewController.xib */; };
 		3FDE783818D7B532009916F0 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE783718D7B532009916F0 /* Game.m */; };
 		3FDE783B18D7B853009916F0 /* GameStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE783A18D7B853009916F0 /* GameStore.m */; };
-		3FE10FC518E1182D003307E3 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 3FE10FC318E1182D003307E3 /* Base64Transcoder.c */; };
-		3FE10FC818E118C6003307E3 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE10FC718E118C6003307E3 /* Helper.m */; };
+		97F59DEF18E13C7600E89229 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F59DEE18E13C7600E89229 /* NSData+Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,10 +49,8 @@
 		3FDE783718D7B532009916F0 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		3FDE783918D7B853009916F0 /* GameStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStore.h; sourceTree = "<group>"; };
 		3FDE783A18D7B853009916F0 /* GameStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStore.m; sourceTree = "<group>"; };
-		3FE10FC318E1182D003307E3 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
-		3FE10FC418E1182D003307E3 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
-		3FE10FC618E118C6003307E3 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
-		3FE10FC718E118C6003307E3 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		97F59DED18E13C7600E89229 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		97F59DEE18E13C7600E89229 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +97,8 @@
 		3FDE781A18D7B498009916F0 /* WebRequest */ = {
 			isa = PBXGroup;
 			children = (
-				3FE10FC618E118C6003307E3 /* Helper.h */,
-				3FE10FC718E118C6003307E3 /* Helper.m */,
-				3FE10FC318E1182D003307E3 /* Base64Transcoder.c */,
-				3FE10FC418E1182D003307E3 /* Base64Transcoder.h */,
+				97F59DED18E13C7600E89229 /* NSData+Base64.h */,
+				97F59DEE18E13C7600E89229 /* NSData+Base64.m */,
 				3FDE782318D7B498009916F0 /* AppDelegate.h */,
 				3FDE782418D7B498009916F0 /* AppDelegate.m */,
 				3FDE781B18D7B498009916F0 /* Supporting Files */,
@@ -208,8 +203,7 @@
 				3FDE783818D7B532009916F0 /* Game.m in Sources */,
 				3FDE783B18D7B853009916F0 /* GameStore.m in Sources */,
 				3FCF527518E0F69600FC3AD7 /* LoginViewController.m in Sources */,
-				3FE10FC518E1182D003307E3 /* Base64Transcoder.c in Sources */,
-				3FE10FC818E118C6003307E3 /* Helper.m in Sources */,
+				97F59DEF18E13C7600E89229 /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

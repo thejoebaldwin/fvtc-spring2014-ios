@@ -8,9 +8,9 @@
 
 #import "GameStore.h"
 #import "Game.h"
-#include <CommonCrypto/CommonDigest.h>
+
 #import <CommonCrypto/CommonHMAC.h>
-#import "Helper.h"
+#import "NSData+Base64.h"
 
 @implementation GameStore
 
@@ -47,21 +47,7 @@ NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
     return self;
 }
 
-+ (NSString *)hmacsha1:(NSString *)text key:(NSString *)secret {
-    NSData *secretData = [secret dataUsingEncoding:NSUTF8StringEncoding];
-    NSData *clearTextData = [text dataUsingEncoding:NSUTF8StringEncoding];
-    unsigned char result[20];
-	CCHmac(kCCHmacAlgSHA1, [secretData bytes], [secretData length], [clearTextData bytes], [clearTextData length], result);
-    
-    char base64Result[32];
-    size_t theResultLength = 32;
-    Base64EncodeData(result, 20, base64Result, &theResultLength);
-    NSData *theData = [NSData dataWithBytes:base64Result length:theResultLength];
-    
-    NSString *base64EncodedResult = [[NSString alloc] initWithData:theData encoding:NSASCIIStringEncoding];
-    
-    return base64EncodedResult;
-}
+
 
 -(NSMutableArray *) Games
 {
@@ -102,44 +88,34 @@ NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
    
 }
 
-- (NSString *) GetAuthHash:(NSString *) password
-{
-    //NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    //[formatter setDateFormat:@"YYYY-MM-dd"];
-    //NSString* today = [formatter stringFromDate:[NSDate date]];
-    /*
-    NSData *data = [password dataUsingEncoding:NSUTF8StringEncoding];
-    uint8_t digest[CC_SHA1_DIGEST_LENGTH];
-    CC_SHA1(data.bytes, data.length, digest);
-    NSMutableString *hash = [NSMutableString stringWithCapacity:CC_SHA1_DIGEST_LENGTH];
-    for (int i = 0; i < CC_SHA1_DIGEST_LENGTH; i++)
-    {
-        [hash appendFormat:@"%02x", digest[i]];
-    }
-    */
-    //add the date at the end
-    //[hash appendString:today];
-    
-    
-    //hash it again!
-    
-    //NSData *data2 = [hash dataUsingEncoding:NSUTF8StringEncoding];
-    //uint8_t digest2[CC_SHA1_DIGEST_LENGTH];
-    //CC_SHA1(data2.bytes, data2.length, digest2);
-    //NSMutableString *hash2 = [NSMutableString stringWithCapacity:CC_SHA1_DIGEST_LENGTH * 2];
-    //for (int i = 0; i < CC_SHA1_DIGEST_LENGTH; i++)
-    //{
-      //  [hash2 appendFormat:@"%02x", digest2[i]];
-    //}
-       
-    NSData *data = [password dataUsingEncoding:NSUTF8StringEncoding];
 
-    NSData *hashData = [self sha256:data];
-   //http://stackoverflow.com/questions/18532707/generate-sha256-hash-for-a-string-in-objective-c-equivalent-to-c-sharp-without-u
-    NSString *theHash = [[NSString alloc] initWithData:hashData encoding:nil];
-    NSLog(@"%@", hashData);
-     NSLog(@"%@", hashData);
-    return theHash;
+
+-(NSString *) SHA1:(NSString*) cleartext
+{
+    
+    NSData *data = [cleartext dataUsingEncoding:NSUnicodeStringEncoding];
+    data = [NSData dataWithBytes:[data bytes] + 2 length:[data length] - 2];
+    NSString *unicodePassword = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    data = [unicodePassword dataUsingEncoding:NSUTF8StringEncoding];
+    unsigned char hash[CC_SHA1_DIGEST_LENGTH];
+    CC_SHA1([data bytes], [data length], hash);
+    NSData *result = [NSData dataWithBytes:hash length:CC_SHA1_DIGEST_LENGTH];
+    
+    NSString *resultHash = [result base64EncodedString];
+    
+    return resultHash;
+}
+
+-(NSString *) GetAuthHash:(NSString*) password
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"YYYY-MM-dd"];
+    NSString *today = [formatter stringFromDate:[NSDate date]];
+    NSString *hash = [self SHA1:password];
+    hash = [hash stringByAppendingString:today];
+    hash = [self SHA1:hash];
+    NSLog(@"RESULT HASH:%@", hash);
+    return hash;
     
 }
 
