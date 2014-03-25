@@ -16,8 +16,9 @@
     NSMutableData *_HttpData;
     void (^completion) (void);
     
-
-    
+    NSString *_authToken;
+    NSDate *_authTokenExpires;
+    int _userID;
 }
 
 -(NSMutableArray*) Games;
