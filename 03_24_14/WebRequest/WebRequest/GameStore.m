@@ -153,18 +153,40 @@ NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
     NSLog(@"Received Data:%@", response);
     
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:_HttpData options:kNilOptions error:nil];
-    //NSLog(@"%@", [json objectForKey:@"games"]);
     
-    NSArray *games = [json objectForKey:@"games"];
-    //NSLog(@"Element[0]:%@", [games objectAtIndex:0]);
-
-    for (int i = 0; i < [games count]; i++)
+    NSString *operation = [json objectForKey:@"operation"];
+   NSString *success = [json objectForKey:@"success"];
+    
+    if ([operation isEqualToString:@"createuser"])
     {
-        NSDictionary *temp = [games objectAtIndex:i];
-        Game *tempGame = [[Game alloc] initWithDictionary:temp];
-        NSLog(@"tempGame:%@", tempGame);
-        [_Games addObject:tempGame];
+        
+    
     }
+    else if ([operation isEqualToString:@"auth"])
+    {
+        if ([success isEqualToString:@"ok"])
+        {
+            _authToken = [json objectForKey:@"authentication_token"];
+            _userID =   [[json objectForKey:@"user_id"] intValue];
+        }
+        else
+        {
+            //?
+        }
+    }
+    else if ([operation isEqualToString:@"allgames"])
+    {
+        NSArray *games = [json objectForKey:@"games"];
+        for (int i = 0; i < [games count]; i++)
+        {
+            NSDictionary *temp = [games objectAtIndex:i];
+            Game *tempGame = [[Game alloc] initWithDictionary:temp];
+            NSLog(@"tempGame:%@", tempGame);
+            [_Games addObject:tempGame];
+        }
+
+    }
+        
     //execute the code block
     completion();
     

@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 
 #import "GameStore.h"
+#import "MainViewController.h"
 
 
 @interface LoginViewController ()
@@ -44,8 +45,11 @@
     NSString *username = [UsernameField text];
     NSString *password = [PasswordField text];
     NSString *email = [EmailField text];
+
     void (^block)(void) = ^{
-        NSLog(@"WE CALLED THE AUTH BLOCK");
+        NSLog(@"LoginViewController Complete");
+        _main = [[MainViewController alloc] init];
+        [[self navigationController] pushViewController:_main animated:YES];
     };
     
     [[GameStore SharedStore] Authenticate:username withPassword:password  withBlock:block];

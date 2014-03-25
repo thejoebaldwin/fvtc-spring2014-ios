@@ -15,7 +15,8 @@
     NSURLConnection *_Connection;
     NSMutableData *_HttpData;
     void (^completion) (void);
-    
+    NSString *_username;
+    NSString *_password;
     NSString *_authToken;
     NSDate *_authTokenExpires;
     int _userID;

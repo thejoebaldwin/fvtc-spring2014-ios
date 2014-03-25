@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
+
 #import "LoginViewController.h"
 
 @implementation AppDelegate
@@ -17,11 +17,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    //set the main view controller to be the root view controller of the application
-    MainViewController *main = [[MainViewController alloc] init];
-    
+
     LoginViewController *login = [[LoginViewController alloc] init];
-    [self.window setRootViewController:login];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:login];
+    [self.window setRootViewController:nav];
     
     
     self.window.backgroundColor = [UIColor whiteColor];

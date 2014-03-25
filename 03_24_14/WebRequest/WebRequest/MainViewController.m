@@ -46,7 +46,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
     void (^block)(void) = ^{
-        NSLog(@"WE CALLED THE BLOCK");
+        NSLog(@"MainViewController:viewDidLoad complete");
         [[self tableView] reloadData];
     };
     
@@ -134,7 +134,6 @@
 */
 
 #pragma mark - Table view delegate
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
