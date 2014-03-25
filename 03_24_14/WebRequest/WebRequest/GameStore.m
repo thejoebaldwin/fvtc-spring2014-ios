@@ -135,10 +135,11 @@ NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
 -(void) LoadGames:(void(^)(void)) block
 {
     //set the completion class variable to block
-   completion = block;
-    //add the json later
-    [self PostDataWithOperation:@"allgames" withJSON:@""];
-   
+    completion = block;
+    NSString *json = [[NSString alloc] initWithFormat:
+                      @"{\"user_id\":\"%i\",\"auth_token\":\"%@\"}",
+                      _userID, _authToken];
+    [self PostDataWithOperation:@"allgames" withJSON:json];
 }
 
 -(void) connection: (NSURLConnection *) conn didReceiveData:(NSData *)data
@@ -155,7 +156,7 @@ NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:_HttpData options:kNilOptions error:nil];
     
     NSString *operation = [json objectForKey:@"operation"];
-   NSString *success = [json objectForKey:@"success"];
+   NSString *status = [json objectForKey:@"status"];
     
     if ([operation isEqualToString:@"createuser"])
     {
@@ -164,10 +165,11 @@ NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
     }
     else if ([operation isEqualToString:@"auth"])
     {
-        if ([success isEqualToString:@"ok"])
+        if ([status isEqualToString:@"ok"])
         {
-            _authToken = [json objectForKey:@"authentication_token"];
-            _userID =   [[json objectForKey:@"user_id"] intValue];
+            NSDictionary *user = [json objectForKey:@"user"];
+            _authToken = [user objectForKey:@"authentication_token"];
+            _userID =   [[user objectForKey:@"user_id"] intValue];
         }
         else
         {
