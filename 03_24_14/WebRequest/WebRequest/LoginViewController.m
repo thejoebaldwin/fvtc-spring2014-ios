@@ -20,6 +20,13 @@
 
 @synthesize UsernameField, PasswordField, EmailField;
 
+
+-(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [UsernameField resignFirstResponder];
+    [PasswordField resignFirstResponder];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -35,6 +42,19 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+bool _firstTime = YES;
+
+-(void) viewDidAppear:(BOOL)animated
+{
+    if (!_firstTime)
+    {
+        [PasswordField setText:@""];
+        [[GameStore SharedStore] LogOut];
+    }
+    _firstTime = NO;
+    
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -44,7 +64,6 @@
 - (IBAction)LoginButtonClick:(id)sender {
     NSString *username = [UsernameField text];
     NSString *password = [PasswordField text];
-    NSString *email = [EmailField text];
 
     void (^block)(void) = ^{
         NSLog(@"LoginViewController Complete");
@@ -70,6 +89,8 @@
     
 
 }
+
+
 
 
 @end

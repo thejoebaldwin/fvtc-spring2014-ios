@@ -88,8 +88,9 @@
     Game *temp = [[[GameStore SharedStore] Games] objectAtIndex:row];
     
     // Configure the cell...
-    NSString *description = [temp description];
-    [[cell textLabel] setText:description];
+    //NSString *description = [temp description];
+    //[cell textLabel] setText:[temp Name] ];
+    [[cell textLabel] setText:[temp Name]];
     
     return cell;
 }

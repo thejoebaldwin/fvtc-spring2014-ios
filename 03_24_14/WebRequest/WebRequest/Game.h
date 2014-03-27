@@ -15,6 +15,8 @@
     int _WinCount;
     int _UserLimit;
     int _UserCount;
+    NSString  *_Name;
+    NSString  *_Description;
 }
 -(int) GameID;
 -(void) SetGameID:(int) gameID;
@@ -27,5 +29,10 @@
 -(int) UserCount;
 -(void) SetUserCount:(int) userCount;
 -(id) initWithDictionary:(NSDictionary*) dictionary;
+-(NSString*) Description;
+-(void) SetDescription: (NSString*) description;
+-(NSString*) Name;
+-(void) SetName:(NSString*) name;
+
 
 @end

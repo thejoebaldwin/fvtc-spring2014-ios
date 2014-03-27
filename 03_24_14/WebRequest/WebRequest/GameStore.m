@@ -23,24 +23,7 @@ NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
     if (self)
     {
         _Games = [[NSMutableArray alloc] init];
-        //populate array
-        /*
-        Game *temp = [[Game alloc] init];
-        [temp SetGameID:0];
-        [temp SetWinCount:1];
-        [temp SetWinLimit:1];
-        [temp SetUserCount:3];
-        [temp SetUserLimit:5];
-        [_Games addObject:temp];
-        
-        temp = [[Game alloc] init];
-        [temp SetGameID:1];
-        [temp SetWinCount:2];
-        [temp SetWinLimit:4];
-        [temp SetUserCount:1];
-        [temp SetUserLimit:3];
-        [_Games addObject:temp];
-        */
+        _LoggedIn = NO;
         NSLog(@"Initialized Games: %@", _Games);
         
     }
@@ -64,6 +47,18 @@ NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
     return sharedStore;
 }
 
+
+-(bool) LoggedIn
+{
+    return _LoggedIn;
+}
+
+-(void) LogOut
+{
+    _password = @"";
+    _LoggedIn = NO;
+    _authToken = @"";
+}
 
 - (void) PostDataWithOperation:(NSString*) operation withJSON: (NSString*) JSON
 {
@@ -137,8 +132,9 @@ NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
     //set the completion class variable to block
     completion = block;
     NSString *json = [[NSString alloc] initWithFormat:
-                      @"{\"user_id\":\"%i\",\"auth_token\":\"%@\"}",
+                      @"{\"user_id\":\"%i\",\"authentication_token\":\"%@\"}",
                       _userID, _authToken];
+    NSLog(@"Post Data:%@", json);
     [self PostDataWithOperation:@"allgames" withJSON:json];
 }
 
@@ -156,7 +152,7 @@ NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:_HttpData options:kNilOptions error:nil];
     
     NSString *operation = [json objectForKey:@"operation"];
-   NSString *status = [json objectForKey:@"status"];
+    NSString *status = [json objectForKey:@"status"];
     
     if ([operation isEqualToString:@"createuser"])
     {
@@ -170,10 +166,11 @@ NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
             NSDictionary *user = [json objectForKey:@"user"];
             _authToken = [user objectForKey:@"authentication_token"];
             _userID =   [[user objectForKey:@"user_id"] intValue];
+            _LoggedIn = YES;
         }
         else
         {
-            //?
+            _LoggedIn = NO;
         }
     }
     else if ([operation isEqualToString:@"allgames"])

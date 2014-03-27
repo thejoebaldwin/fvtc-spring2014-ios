@@ -52,6 +52,29 @@
     _UserCount = userCount;
 }
 
+
+-(NSString*) Description
+{
+    return _Description;
+}
+
+-(void) SetDescription:(NSString*) description
+{
+    _Description = description;
+    
+}
+
+-(void) SetName: (NSString*) name
+{
+    _Name = name;
+}
+
+-(NSString*) Name
+{
+    return _Name;
+}
+
+
 -(NSString*) description
 {
     NSString *description = [[NSString alloc] initWithFormat:@"GameID:%i,WinLimit:%i,WinCount:%i,UserLimit:%i,UserCount:%i",
@@ -73,8 +96,13 @@
         _WinLimit = [[dictionary objectForKey:@"win_limit"] intValue];
         _UserCount = [[dictionary objectForKey:@"user_count"] intValue];
         _UserLimit = [[dictionary objectForKey:@"user_limit"] intValue];
+        _Description = [dictionary objectForKey:@"description"];
+        _Name = [dictionary objectForKey:@"name"];
     }
     return self;
 }
+
+
+
 
 @end

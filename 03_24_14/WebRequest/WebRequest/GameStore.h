@@ -20,8 +20,10 @@
     NSString *_authToken;
     NSDate *_authTokenExpires;
     int _userID;
+    bool _LoggedIn;
 }
-
+-(bool) LoggedIn;
+-(void) LogOut;
 -(NSMutableArray*) Games;
 +(GameStore*) SharedStore;
 -(void) LoadGames: (void(^)(void)) block;
