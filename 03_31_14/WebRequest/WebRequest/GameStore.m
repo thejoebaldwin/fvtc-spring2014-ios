@@ -6,14 +6,14 @@
 //  Copyright (c) 2014 FVTC. All rights reserved.
 //
 
-#import "BingoStore.h"
+#import "GameStore.h"
 #import "Game.h"
-#import "User.h"
+
 
 #import <CommonCrypto/CommonHMAC.h>
 #import "NSData+Base64.h"
 
-@implementation BingoStore
+@implementation GameStore
 
 
 NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
@@ -38,9 +38,9 @@ NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
     return _Games;
 }
 
-+(BingoStore*) SharedStore
++(GameStore*) SharedStore
 {
-    static BingoStore *sharedStore = nil;
+    static GameStore *sharedStore = nil;
     if (!sharedStore)
     {
         sharedStore = [[super allocWithZone:nil] init];

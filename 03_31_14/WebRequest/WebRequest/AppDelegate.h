@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  Bingo Store
+//  WebRequest
 //
-//  Created by student on 3/31/14.
+//  Created by student on 3/17/14.
 //  Copyright (c) 2014 FVTC. All rights reserved.
 //
 

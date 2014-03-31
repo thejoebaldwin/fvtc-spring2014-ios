@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'Bingo Store' target in the 'Bingo Store' project
+// Prefix header for all source files of the 'WebRequest' target in the 'WebRequest' project
 //
 
 #import <Availability.h>

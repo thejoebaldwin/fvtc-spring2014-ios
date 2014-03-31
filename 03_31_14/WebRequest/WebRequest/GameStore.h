@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BingoStore : NSObject
+@interface GameStore : NSObject
 {
     NSMutableArray *_Games;
     //connection object
@@ -25,7 +25,7 @@
 -(bool) LoggedIn;
 -(void) LogOut;
 -(NSMutableArray*) Games;
-+(BingoStore*) SharedStore;
++(GameStore*) SharedStore;
 -(void) LoadGames: (void(^)(void)) block;
 -(void) LoadUsers: (void(^)(void)) block;
 

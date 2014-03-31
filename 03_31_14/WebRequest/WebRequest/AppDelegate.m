@@ -1,12 +1,14 @@
 //
 //  AppDelegate.m
-//  Bingo Store
+//  WebRequest
 //
-//  Created by student on 3/31/14.
+//  Created by student on 3/17/14.
 //  Copyright (c) 2014 FVTC. All rights reserved.
 //
 
 #import "AppDelegate.h"
+
+#import "LoginViewController.h"
 
 @implementation AppDelegate
 
@@ -14,6 +16,13 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+
+    LoginViewController *login = [[LoginViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:login];
+    [self.window setRootViewController:nav];
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
