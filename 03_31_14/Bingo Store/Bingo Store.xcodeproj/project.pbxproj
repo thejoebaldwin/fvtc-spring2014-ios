@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F1B399918EA255500B9B20E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1B399818EA255500B9B20E /* UIKit.framework */; };
+		3F1B399B18EA255500B9B20E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1B399A18EA255500B9B20E /* Foundation.framework */; };
+		3F1B399D18EA255500B9B20E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1B399C18EA255500B9B20E /* CoreGraphics.framework */; };
+		3F1B39A318EA255600B9B20E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F1B39A118EA255600B9B20E /* InfoPlist.strings */; };
+		3F1B39A518EA255600B9B20E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B39A418EA255600B9B20E /* main.m */; };
+		3F1B39A918EA255600B9B20E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B39A818EA255600B9B20E /* AppDelegate.m */; };
+		3F1B39AB18EA255600B9B20E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1B39AA18EA255600B9B20E /* Default.png */; };
+		3F1B39AD18EA255600B9B20E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1B39AC18EA255600B9B20E /* Default@2x.png */; };
+		3F1B39AF18EA255600B9B20E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1B39AE18EA255600B9B20E /* Default-568h@2x.png */; };
+		3F1B39B718EA257E00B9B20E /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B39B618EA257E00B9B20E /* Game.m */; };
+		3F1B39BA18EA25AF00B9B20E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B39B918EA25AF00B9B20E /* User.m */; };
+		3F1B39BD18EA26ED00B9B20E /* BingoStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B39BC18EA26EC00B9B20E /* BingoStore.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F1B399418EA255500B9B20E /* Bingo Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bingo Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1B399818EA255500B9B20E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3F1B399A18EA255500B9B20E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3F1B399C18EA255500B9B20E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3F1B39A018EA255600B9B20E /* Bingo Store-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bingo Store-Info.plist"; sourceTree = "<group>"; };
+		3F1B39A218EA255600B9B20E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F1B39A418EA255600B9B20E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F1B39A618EA255600B9B20E /* Bingo Store-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bingo Store-Prefix.pch"; sourceTree = "<group>"; };
+		3F1B39A718EA255600B9B20E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F1B39A818EA255600B9B20E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F1B39AA18EA255600B9B20E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3F1B39AC18EA255600B9B20E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3F1B39AE18EA255600B9B20E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3F1B39B518EA256C00B9B20E /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../../../03_24_14/WebRequest/WebRequest/Game.h; sourceTree = "<group>"; };
+		3F1B39B618EA257E00B9B20E /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../../../03_24_14/WebRequest/WebRequest/Game.m; sourceTree = "<group>"; };
+		3F1B39B818EA25AF00B9B20E /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		3F1B39B918EA25AF00B9B20E /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		3F1B39BB18EA26EC00B9B20E /* BingoStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BingoStore.h; path = ../../../03_24_14/WebRequest/WebRequest/BingoStore.h; sourceTree = "<group>"; };
+		3F1B39BC18EA26EC00B9B20E /* BingoStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BingoStore.m; path = ../../../03_24_14/WebRequest/WebRequest/BingoStore.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F1B399118EA255500B9B20E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1B399918EA255500B9B20E /* UIKit.framework in Frameworks */,
+				3F1B399B18EA255500B9B20E /* Foundation.framework in Frameworks */,
+				3F1B399D18EA255500B9B20E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F1B398918EA255500B9B20E = {
+			isa = PBXGroup;
+			children = (
+				3F1B399E18EA255600B9B20E /* Bingo Store */,
+				3F1B399718EA255500B9B20E /* Frameworks */,
+				3F1B399518EA255500B9B20E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F1B399518EA255500B9B20E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F1B399418EA255500B9B20E /* Bingo Store.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F1B399718EA255500B9B20E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F1B399818EA255500B9B20E /* UIKit.framework */,
+				3F1B399A18EA255500B9B20E /* Foundation.framework */,
+				3F1B399C18EA255500B9B20E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F1B399E18EA255600B9B20E /* Bingo Store */ = {
+			isa = PBXGroup;
+			children = (
+				3F1B39BB18EA26EC00B9B20E /* BingoStore.h */,
+				3F1B39BC18EA26EC00B9B20E /* BingoStore.m */,
+				3F1B39B618EA257E00B9B20E /* Game.m */,
+				3F1B39B518EA256C00B9B20E /* Game.h */,
+				3F1B39A718EA255600B9B20E /* AppDelegate.h */,
+				3F1B39A818EA255600B9B20E /* AppDelegate.m */,
+				3F1B399F18EA255600B9B20E /* Supporting Files */,
+				3F1B39B818EA25AF00B9B20E /* User.h */,
+				3F1B39B918EA25AF00B9B20E /* User.m */,
+			);
+			path = "Bingo Store";
+			sourceTree = "<group>";
+		};
+		3F1B399F18EA255600B9B20E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F1B39A018EA255600B9B20E /* Bingo Store-Info.plist */,
+				3F1B39A118EA255600B9B20E /* InfoPlist.strings */,
+				3F1B39A418EA255600B9B20E /* main.m */,
+				3F1B39A618EA255600B9B20E /* Bingo Store-Prefix.pch */,
+				3F1B39AA18EA255600B9B20E /* Default.png */,
+				3F1B39AC18EA255600B9B20E /* Default@2x.png */,
+				3F1B39AE18EA255600B9B20E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F1B399318EA255500B9B20E /* Bingo Store */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F1B39B218EA255600B9B20E /* Build configuration list for PBXNativeTarget "Bingo Store" */;
+			buildPhases = (
+				3F1B399018EA255500B9B20E /* Sources */,
+				3F1B399118EA255500B9B20E /* Frameworks */,
+				3F1B399218EA255500B9B20E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bingo Store";
+			productName = "Bingo Store";
+			productReference = 3F1B399418EA255500B9B20E /* Bingo Store.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F1B398B18EA255500B9B20E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = FVTC;
+			};
+			buildConfigurationList = 3F1B398E18EA255500B9B20E /* Build configuration list for PBXProject "Bingo Store" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3F1B398918EA255500B9B20E;
+			productRefGroup = 3F1B399518EA255500B9B20E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F1B399318EA255500B9B20E /* Bingo Store */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F1B399218EA255500B9B20E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1B39A318EA255600B9B20E /* InfoPlist.strings in Resources */,
+				3F1B39AB18EA255600B9B20E /* Default.png in Resources */,
+				3F1B39AD18EA255600B9B20E /* Default@2x.png in Resources */,
+				3F1B39AF18EA255600B9B20E /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F1B399018EA255500B9B20E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1B39A518EA255600B9B20E /* main.m in Sources */,
+				3F1B39A918EA255600B9B20E /* AppDelegate.m in Sources */,
+				3F1B39B718EA257E00B9B20E /* Game.m in Sources */,
+				3F1B39BA18EA25AF00B9B20E /* User.m in Sources */,
+				3F1B39BD18EA26ED00B9B20E /* BingoStore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3F1B39A118EA255600B9B20E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F1B39A218EA255600B9B20E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F1B39B018EA255600B9B20E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3F1B39B118EA255600B9B20E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F1B39B318EA255600B9B20E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bingo Store/Bingo Store-Prefix.pch";
+				INFOPLIST_FILE = "Bingo Store/Bingo Store-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3F1B39B418EA255600B9B20E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bingo Store/Bingo Store-Prefix.pch";
+				INFOPLIST_FILE = "Bingo Store/Bingo Store-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F1B398E18EA255500B9B20E /* Build configuration list for PBXProject "Bingo Store" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1B39B018EA255600B9B20E /* Debug */,
+				3F1B39B118EA255600B9B20E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F1B39B218EA255600B9B20E /* Build configuration list for PBXNativeTarget "Bingo Store" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1B39B318EA255600B9B20E /* Debug */,
+				3F1B39B418EA255600B9B20E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F1B398B18EA255500B9B20E /* Project object */;
+}
