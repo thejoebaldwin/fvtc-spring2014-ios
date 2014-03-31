@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1B39C718EA284F00B9B20E /* GameStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B39C618EA284F00B9B20E /* GameStore.m */; };
 		3FCF527518E0F69600FC3AD7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF527318E0F69600FC3AD7 /* LoginViewController.m */; };
 		3FCF527618E0F69600FC3AD7 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FCF527418E0F69600FC3AD7 /* LoginViewController.xib */; };
 		3FDE781518D7B498009916F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE781418D7B498009916F0 /* UIKit.framework */; };
@@ -21,11 +22,12 @@
 		3FDE783418D7B4D2009916F0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE783218D7B4D2009916F0 /* MainViewController.m */; };
 		3FDE783518D7B4D2009916F0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE783318D7B4D2009916F0 /* MainViewController.xib */; };
 		3FDE783818D7B532009916F0 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE783718D7B532009916F0 /* Game.m */; };
-		3FDE783B18D7B853009916F0 /* GameStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE783A18D7B853009916F0 /* GameStore.m */; };
 		97F59DEF18E13C7600E89229 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F59DEE18E13C7600E89229 /* NSData+Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F1B39C518EA284F00B9B20E /* GameStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStore.h; sourceTree = "<group>"; };
+		3F1B39C618EA284F00B9B20E /* GameStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStore.m; sourceTree = "<group>"; };
 		3FCF527218E0F69600FC3AD7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		3FCF527318E0F69600FC3AD7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		3FCF527418E0F69600FC3AD7 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -47,8 +49,6 @@
 		3FDE783318D7B4D2009916F0 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		3FDE783618D7B532009916F0 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		3FDE783718D7B532009916F0 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
-		3FDE783918D7B853009916F0 /* GameStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStore.h; sourceTree = "<group>"; };
-		3FDE783A18D7B853009916F0 /* GameStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStore.m; sourceTree = "<group>"; };
 		97F59DED18E13C7600E89229 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		97F59DEE18E13C7600E89229 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +97,8 @@
 		3FDE781A18D7B498009916F0 /* WebRequest */ = {
 			isa = PBXGroup;
 			children = (
+				3F1B39C518EA284F00B9B20E /* GameStore.h */,
+				3F1B39C618EA284F00B9B20E /* GameStore.m */,
 				97F59DED18E13C7600E89229 /* NSData+Base64.h */,
 				97F59DEE18E13C7600E89229 /* NSData+Base64.m */,
 				3FDE782318D7B498009916F0 /* AppDelegate.h */,
@@ -107,8 +109,6 @@
 				3FDE783318D7B4D2009916F0 /* MainViewController.xib */,
 				3FDE783618D7B532009916F0 /* Game.h */,
 				3FDE783718D7B532009916F0 /* Game.m */,
-				3FDE783918D7B853009916F0 /* GameStore.h */,
-				3FDE783A18D7B853009916F0 /* GameStore.m */,
 				3FCF527218E0F69600FC3AD7 /* LoginViewController.h */,
 				3FCF527318E0F69600FC3AD7 /* LoginViewController.m */,
 				3FCF527418E0F69600FC3AD7 /* LoginViewController.xib */,
@@ -201,9 +201,9 @@
 				3FDE782518D7B498009916F0 /* AppDelegate.m in Sources */,
 				3FDE783418D7B4D2009916F0 /* MainViewController.m in Sources */,
 				3FDE783818D7B532009916F0 /* Game.m in Sources */,
-				3FDE783B18D7B853009916F0 /* GameStore.m in Sources */,
 				3FCF527518E0F69600FC3AD7 /* LoginViewController.m in Sources */,
 				97F59DEF18E13C7600E89229 /* NSData+Base64.m in Sources */,
+				3F1B39C718EA284F00B9B20E /* GameStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

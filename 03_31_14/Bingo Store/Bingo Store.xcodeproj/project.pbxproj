@@ -18,7 +18,7 @@
 		3F1B39AF18EA255600B9B20E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1B39AE18EA255600B9B20E /* Default-568h@2x.png */; };
 		3F1B39B718EA257E00B9B20E /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B39B618EA257E00B9B20E /* Game.m */; };
 		3F1B39BA18EA25AF00B9B20E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B39B918EA25AF00B9B20E /* User.m */; };
-		3F1B39BD18EA26ED00B9B20E /* BingoStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B39BC18EA26EC00B9B20E /* BingoStore.m */; };
+		3F1B39C418EA284100B9B20E /* BingoStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B39C318EA284100B9B20E /* BingoStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +39,8 @@
 		3F1B39B618EA257E00B9B20E /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../../../03_24_14/WebRequest/WebRequest/Game.m; sourceTree = "<group>"; };
 		3F1B39B818EA25AF00B9B20E /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		3F1B39B918EA25AF00B9B20E /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		3F1B39BB18EA26EC00B9B20E /* BingoStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BingoStore.h; path = ../../../03_24_14/WebRequest/WebRequest/BingoStore.h; sourceTree = "<group>"; };
-		3F1B39BC18EA26EC00B9B20E /* BingoStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BingoStore.m; path = ../../../03_24_14/WebRequest/WebRequest/BingoStore.m; sourceTree = "<group>"; };
+		3F1B39C218EA284100B9B20E /* BingoStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingoStore.h; sourceTree = "<group>"; };
+		3F1B39C318EA284100B9B20E /* BingoStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingoStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +87,8 @@
 		3F1B399E18EA255600B9B20E /* Bingo Store */ = {
 			isa = PBXGroup;
 			children = (
-				3F1B39BB18EA26EC00B9B20E /* BingoStore.h */,
-				3F1B39BC18EA26EC00B9B20E /* BingoStore.m */,
+				3F1B39C218EA284100B9B20E /* BingoStore.h */,
+				3F1B39C318EA284100B9B20E /* BingoStore.m */,
 				3F1B39B618EA257E00B9B20E /* Game.m */,
 				3F1B39B518EA256C00B9B20E /* Game.h */,
 				3F1B39A718EA255600B9B20E /* AppDelegate.h */,
@@ -183,7 +183,7 @@
 				3F1B39A918EA255600B9B20E /* AppDelegate.m in Sources */,
 				3F1B39B718EA257E00B9B20E /* Game.m in Sources */,
 				3F1B39BA18EA25AF00B9B20E /* User.m in Sources */,
-				3F1B39BD18EA26ED00B9B20E /* BingoStore.m in Sources */,
+				3F1B39C418EA284100B9B20E /* BingoStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
