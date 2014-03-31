@@ -15,7 +15,7 @@
     NSString *_Bio;
     int _GameCount;
     int _WinCount;
-    int _RanK;
+    int _Rank;
     
 }
 
@@ -35,5 +35,9 @@
 
 -(int) Rank;
 -(void) SetRank:(int) rank;
+
+-(id) initWithData:(NSDictionary *) dictionary;
+-(NSString *) description;
+
 
 @end
