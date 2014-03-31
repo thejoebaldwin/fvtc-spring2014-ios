@@ -66,7 +66,7 @@ bool _firstTime = YES;
     NSString *password = [PasswordField text];
 
     void (^block)(void) = ^{
-        NSLog(@"LoginViewController Complete");
+        NSLog(@"LoginViewController Authenticate Complete");
         _main = [[MainViewController alloc] init];
         [[self navigationController] pushViewController:_main animated:YES];
     };
