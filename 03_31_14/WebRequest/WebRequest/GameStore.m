@@ -20,6 +20,12 @@
 NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
 
 
+-(NSString *) Number
+{
+    return _number;
+    
+}
+
 -(NSString *)getTimestamp
 {
     float fseconds = [[NSDate date] timeIntervalSince1970];
@@ -170,6 +176,10 @@ NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
     {
         
     
+    }
+    else if ([operation isEqualToString:@"getnumber"])
+    {
+        _number = [json objectForKey:@"number"] ;
     }
     else  if ([operation isEqualToString:@"allusers"])
     {

@@ -9,6 +9,7 @@
 #import "GameDetailViewController.h"
 #import "Game.h"
 #import "GameStore.h"
+#import "GameCardViewController.h"
 
 @interface GameDetailViewController ()
 
@@ -56,7 +57,10 @@
     Game *game = [[[GameStore SharedStore] Games] objectAtIndex: _GameIndex];
     
     void (^block)(void) = ^{
-        NSLog(@"GameDetailViewController Join Complete");
+            NSLog(@"GameDetailViewController Join Complete");
+            GameCardViewController *gc = [[GameCardViewController alloc] init];
+            [gc SetGameIndex: _GameIndex];
+            [[self navigationController] pushViewController:gc animated:YES];
            };
     
     
@@ -68,6 +72,7 @@
     
     void (^block)(void) = ^{
         NSLog(@"GameDetailViewController Quit Complete");
+        [[self navigationController] popViewControllerAnimated:YES];
     };
     [[GameStore SharedStore] QuitGame:[game GameID] withBlock:block];
 }

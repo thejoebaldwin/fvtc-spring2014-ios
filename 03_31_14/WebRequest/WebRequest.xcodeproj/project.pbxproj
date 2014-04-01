@@ -13,6 +13,8 @@
 		3FDB679718EA337500BAB01E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDB679618EA337500BAB01E /* User.m */; };
 		3FDB679C18EA3E4C00BAB01E /* GameDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDB679A18EA3E4C00BAB01E /* GameDetailViewController.m */; };
 		3FDB679D18EA3E4C00BAB01E /* GameDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB679B18EA3E4C00BAB01E /* GameDetailViewController.xib */; };
+		3FDB67A118EA4A2200BAB01E /* GameCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDB679F18EA4A2200BAB01E /* GameCardViewController.m */; };
+		3FDB67A218EA4A2200BAB01E /* GameCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB67A018EA4A2200BAB01E /* GameCardViewController.xib */; };
 		3FDE781518D7B498009916F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE781418D7B498009916F0 /* UIKit.framework */; };
 		3FDE781718D7B498009916F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE781618D7B498009916F0 /* Foundation.framework */; };
 		3FDE781918D7B498009916F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE781818D7B498009916F0 /* CoreGraphics.framework */; };
@@ -39,6 +41,9 @@
 		3FDB679918EA3E4C00BAB01E /* GameDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDetailViewController.h; sourceTree = "<group>"; };
 		3FDB679A18EA3E4C00BAB01E /* GameDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameDetailViewController.m; sourceTree = "<group>"; };
 		3FDB679B18EA3E4C00BAB01E /* GameDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameDetailViewController.xib; sourceTree = "<group>"; };
+		3FDB679E18EA4A2200BAB01E /* GameCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCardViewController.h; sourceTree = "<group>"; };
+		3FDB679F18EA4A2200BAB01E /* GameCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCardViewController.m; sourceTree = "<group>"; };
+		3FDB67A018EA4A2200BAB01E /* GameCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameCardViewController.xib; sourceTree = "<group>"; };
 		3FDE781018D7B498009916F0 /* WebRequest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebRequest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDE781418D7B498009916F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3FDE781618D7B498009916F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -125,6 +130,9 @@
 				3FDB679918EA3E4C00BAB01E /* GameDetailViewController.h */,
 				3FDB679A18EA3E4C00BAB01E /* GameDetailViewController.m */,
 				3FDB679B18EA3E4C00BAB01E /* GameDetailViewController.xib */,
+				3FDB679E18EA4A2200BAB01E /* GameCardViewController.h */,
+				3FDB679F18EA4A2200BAB01E /* GameCardViewController.m */,
+				3FDB67A018EA4A2200BAB01E /* GameCardViewController.xib */,
 			);
 			path = WebRequest;
 			sourceTree = "<group>";
@@ -201,6 +209,7 @@
 				3FDE783518D7B4D2009916F0 /* MainViewController.xib in Resources */,
 				3FCF527618E0F69600FC3AD7 /* LoginViewController.xib in Resources */,
 				3FDB679D18EA3E4C00BAB01E /* GameDetailViewController.xib in Resources */,
+				3FDB67A218EA4A2200BAB01E /* GameCardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +229,7 @@
 				3F1B39C718EA284F00B9B20E /* GameStore.m in Sources */,
 				3FDB679718EA337500BAB01E /* User.m in Sources */,
 				3FDB679C18EA3E4C00BAB01E /* GameDetailViewController.m in Sources */,
+				3FDB67A118EA4A2200BAB01E /* GameCardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

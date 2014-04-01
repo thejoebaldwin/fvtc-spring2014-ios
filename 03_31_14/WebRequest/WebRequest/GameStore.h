@@ -22,7 +22,9 @@
     NSDate *_authTokenExpires;
     int _userID;
     bool _LoggedIn;
+    NSString *_number;
 }
+-(NSString*) Number;
 -(bool) LoggedIn;
 -(void) LogOut;
 -(NSMutableArray*) Games;
