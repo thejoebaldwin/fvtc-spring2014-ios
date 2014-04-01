@@ -38,9 +38,9 @@
 -(void) Authenticate:(NSString*) username withPassword:(NSString*) password withBlock:(void(^)(void)) block;
 
 
--(void) JoinGame:(int) gameID withUserID:(int) UserID withBlock:(void(^)(void)) block;
+-(void) JoinGame:(int) gameID withBlock:(void(^)(void)) block;
 
--(void) QuitGame:(int) gameID withUserID:(int) UserID withBlock:(void(^)(void)) block;
+-(void) QuitGame:(int) gameID withBlock:(void(^)(void)) block;
 
 -(void) GetNextNumber:(int) gameID withBlock:(void(^)(void)) block;
 

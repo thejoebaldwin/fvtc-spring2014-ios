@@ -19,6 +19,16 @@
 
 NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
 
+
+-(NSString *)getTimestamp
+{
+    float fseconds = [[NSDate date] timeIntervalSince1970];
+    int seconds = (int) floor(fseconds);
+    NSString *t =  [NSString stringWithFormat:@"%i", seconds ];
+    return t;
+}
+
+
 -(id) init
 {
     self  = [super init];
@@ -235,7 +245,7 @@ NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
 }
 
 
--(void) JoinGame:(int) gameID withUserID:(int) UserID withBlock:(void(^)(void)) block
+-(void) JoinGame:(int) gameID  withBlock:(void(^)(void)) block
 {
     //set the completion class variable to block
     completion = block;
@@ -247,7 +257,7 @@ NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
 
 }
 
--(void) QuitGame:(int) gameID withUserID:(int) UserID withBlock:(void(^)(void)) block
+-(void) QuitGame:(int) gameID withBlock:(void(^)(void)) block
 {
     //set the completion class variable to block
     completion = block;

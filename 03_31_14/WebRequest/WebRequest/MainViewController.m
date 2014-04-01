@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "GameStore.h"
 #import "Game.h"
+#import "GameDetailViewController.h"
 
 @interface MainViewController ()
 
@@ -137,13 +138,13 @@
 #pragma mark - Table view delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    //instantiate the detail view controller
+    GameDetailViewController *gd = [[GameDetailViewController alloc] init];
+    //set the game index here
+    [gd SetGameIndex:[indexPath row]];
+    //push the detail view controller onto the navigation controller
+    [[self navigationController] pushViewController:gd animated:YES];
+    
 }
 
 @end
