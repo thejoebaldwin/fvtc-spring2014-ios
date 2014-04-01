@@ -8,6 +8,7 @@
 
 #import "GameStore.h"
 #import "Game.h"
+#import "User.h"
 
 
 #import <CommonCrypto/CommonHMAC.h>
@@ -24,6 +25,7 @@ NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
     if (self)
     {
         _Games = [[NSMutableArray alloc] init];
+        _Users = [[NSMutableArray alloc] init];
         _LoggedIn = NO;
         NSLog(@"Initialized Games: %@", _Games);
         
@@ -159,6 +161,19 @@ NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
         
     
     }
+    else  if ([operation isEqualToString:@"allusers"])
+    {
+        NSArray *users = [json objectForKey:@"users"];
+        for (int i = 0; i < [users count]; i++)
+        {
+            NSDictionary *temp = [users objectAtIndex:i];
+            User *tempUser = [[User alloc] initWithDictionary:temp];
+            NSLog(@"tempGame:%@", tempUser);
+            [_Users addObject:tempUser];
+        }
+
+        
+    }
     else if ([operation isEqualToString:@"auth"])
     {
         if ([status isEqualToString:@"ok"])
@@ -219,5 +234,39 @@ NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
      [self PostDataWithOperation:@"auth" withJSON:json];
 }
 
+
+-(void) JoinGame:(int) gameID withUserID:(int) UserID withBlock:(void(^)(void)) block
+{
+    //set the completion class variable to block
+    completion = block;
+    NSString *json = [[NSString alloc] initWithFormat:
+                      @"{\"user_id\":\"%i\",\"authentication_token\":\"%@\", \"game_id\":\"%i\"}",
+                      _userID, _authToken, gameID];
+    NSLog(@"Post Data:%@", json);
+    [self PostDataWithOperation:@"joingame" withJSON:json];
+
+}
+
+-(void) QuitGame:(int) gameID withUserID:(int) UserID withBlock:(void(^)(void)) block
+{
+    //set the completion class variable to block
+    completion = block;
+    NSString *json = [[NSString alloc] initWithFormat:
+                      @"{\"user_id\":\"%i\",\"authentication_token\":\"%@\", \"game_id\":\"%i\"}",
+                      _userID, _authToken, gameID];
+    NSLog(@"Post Data:%@", json);
+    [self PostDataWithOperation:@"quitgame" withJSON:json];
+}
+
+-(void) GetNextNumber:(int) gameID withBlock:(void(^)(void)) block
+{
+    //set the completion class variable to block
+    completion = block;
+    NSString *json = [[NSString alloc] initWithFormat:
+                      @"{\"user_id\":\"%i\",\"authentication_token\":\"%@\", \"game_id\":\"%i\"}",
+                      _userID, _authToken, gameID];
+    NSLog(@"Post Data:%@", json);
+    [self PostDataWithOperation:@"getnumber" withJSON:json];
+}
 
 @end

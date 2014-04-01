@@ -36,7 +36,7 @@
 -(int) Rank;
 -(void) SetRank:(int) rank;
 
--(id) initWithData:(NSDictionary *) dictionary;
+-(id) initWithDictionary:(NSDictionary *) dictionary;
 -(NSString *) description;
 
 
