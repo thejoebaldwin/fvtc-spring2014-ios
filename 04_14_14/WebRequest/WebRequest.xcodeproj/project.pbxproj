@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F1B39C718EA284F00B9B20E /* GameStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B39C618EA284F00B9B20E /* GameStore.m */; };
+		3FCF527518E0F69600FC3AD7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF527318E0F69600FC3AD7 /* LoginViewController.m */; };
+		3FCF527618E0F69600FC3AD7 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FCF527418E0F69600FC3AD7 /* LoginViewController.xib */; };
+		3FDB679718EA337500BAB01E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDB679618EA337500BAB01E /* User.m */; };
+		3FDB679C18EA3E4C00BAB01E /* GameDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDB679A18EA3E4C00BAB01E /* GameDetailViewController.m */; };
+		3FDB679D18EA3E4C00BAB01E /* GameDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB679B18EA3E4C00BAB01E /* GameDetailViewController.xib */; };
+		3FDB67A118EA4A2200BAB01E /* GameCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDB679F18EA4A2200BAB01E /* GameCardViewController.m */; };
+		3FDB67A218EA4A2200BAB01E /* GameCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB67A018EA4A2200BAB01E /* GameCardViewController.xib */; };
+		3FDE781518D7B498009916F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE781418D7B498009916F0 /* UIKit.framework */; };
+		3FDE781718D7B498009916F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE781618D7B498009916F0 /* Foundation.framework */; };
+		3FDE781918D7B498009916F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDE781818D7B498009916F0 /* CoreGraphics.framework */; };
+		3FDE781F18D7B498009916F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE781D18D7B498009916F0 /* InfoPlist.strings */; };
+		3FDE782118D7B498009916F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE782018D7B498009916F0 /* main.m */; };
+		3FDE782518D7B498009916F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE782418D7B498009916F0 /* AppDelegate.m */; };
+		3FDE782718D7B498009916F0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE782618D7B498009916F0 /* Default.png */; };
+		3FDE782918D7B498009916F0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE782818D7B498009916F0 /* Default@2x.png */; };
+		3FDE782B18D7B498009916F0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE782A18D7B498009916F0 /* Default-568h@2x.png */; };
+		3FDE783418D7B4D2009916F0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE783218D7B4D2009916F0 /* MainViewController.m */; };
+		3FDE783518D7B4D2009916F0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE783318D7B4D2009916F0 /* MainViewController.xib */; };
+		3FDE783818D7B532009916F0 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE783718D7B532009916F0 /* Game.m */; };
+		97F59DEF18E13C7600E89229 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F59DEE18E13C7600E89229 /* NSData+Base64.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F1B39C518EA284F00B9B20E /* GameStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStore.h; sourceTree = "<group>"; };
+		3F1B39C618EA284F00B9B20E /* GameStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStore.m; sourceTree = "<group>"; };
+		3FCF527218E0F69600FC3AD7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		3FCF527318E0F69600FC3AD7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		3FCF527418E0F69600FC3AD7 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		3FDB679518EA337500BAB01E /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		3FDB679618EA337500BAB01E /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		3FDB679918EA3E4C00BAB01E /* GameDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDetailViewController.h; sourceTree = "<group>"; };
+		3FDB679A18EA3E4C00BAB01E /* GameDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameDetailViewController.m; sourceTree = "<group>"; };
+		3FDB679B18EA3E4C00BAB01E /* GameDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameDetailViewController.xib; sourceTree = "<group>"; };
+		3FDB679E18EA4A2200BAB01E /* GameCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCardViewController.h; sourceTree = "<group>"; };
+		3FDB679F18EA4A2200BAB01E /* GameCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCardViewController.m; sourceTree = "<group>"; };
+		3FDB67A018EA4A2200BAB01E /* GameCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameCardViewController.xib; sourceTree = "<group>"; };
+		3FDE781018D7B498009916F0 /* WebRequest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebRequest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FDE781418D7B498009916F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3FDE781618D7B498009916F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3FDE781818D7B498009916F0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3FDE781C18D7B498009916F0 /* WebRequest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebRequest-Info.plist"; sourceTree = "<group>"; };
+		3FDE781E18D7B498009916F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FDE782018D7B498009916F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FDE782218D7B498009916F0 /* WebRequest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebRequest-Prefix.pch"; sourceTree = "<group>"; };
+		3FDE782318D7B498009916F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3FDE782418D7B498009916F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3FDE782618D7B498009916F0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3FDE782818D7B498009916F0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3FDE782A18D7B498009916F0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3FDE783118D7B4D2009916F0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		3FDE783218D7B4D2009916F0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		3FDE783318D7B4D2009916F0 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3FDE783618D7B532009916F0 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		3FDE783718D7B532009916F0 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		97F59DED18E13C7600E89229 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		97F59DEE18E13C7600E89229 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FDE780D18D7B498009916F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FDE781518D7B498009916F0 /* UIKit.framework in Frameworks */,
+				3FDE781718D7B498009916F0 /* Foundation.framework in Frameworks */,
+				3FDE781918D7B498009916F0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FDE780518D7B498009916F0 = {
+			isa = PBXGroup;
+			children = (
+				3FDE781A18D7B498009916F0 /* WebRequest */,
+				3FDE781318D7B498009916F0 /* Frameworks */,
+				3FDE781118D7B498009916F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FDE781118D7B498009916F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FDE781018D7B498009916F0 /* WebRequest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FDE781318D7B498009916F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FDE781418D7B498009916F0 /* UIKit.framework */,
+				3FDE781618D7B498009916F0 /* Foundation.framework */,
+				3FDE781818D7B498009916F0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FDE781A18D7B498009916F0 /* WebRequest */ = {
+			isa = PBXGroup;
+			children = (
+				3FDB679518EA337500BAB01E /* User.h */,
+				3FDB679618EA337500BAB01E /* User.m */,
+				3F1B39C518EA284F00B9B20E /* GameStore.h */,
+				3F1B39C618EA284F00B9B20E /* GameStore.m */,
+				97F59DED18E13C7600E89229 /* NSData+Base64.h */,
+				97F59DEE18E13C7600E89229 /* NSData+Base64.m */,
+				3FDE782318D7B498009916F0 /* AppDelegate.h */,
+				3FDE782418D7B498009916F0 /* AppDelegate.m */,
+				3FDE781B18D7B498009916F0 /* Supporting Files */,
+				3FDE783118D7B4D2009916F0 /* MainViewController.h */,
+				3FDE783218D7B4D2009916F0 /* MainViewController.m */,
+				3FDE783318D7B4D2009916F0 /* MainViewController.xib */,
+				3FDE783618D7B532009916F0 /* Game.h */,
+				3FDE783718D7B532009916F0 /* Game.m */,
+				3FCF527218E0F69600FC3AD7 /* LoginViewController.h */,
+				3FCF527318E0F69600FC3AD7 /* LoginViewController.m */,
+				3FCF527418E0F69600FC3AD7 /* LoginViewController.xib */,
+				3FDB679918EA3E4C00BAB01E /* GameDetailViewController.h */,
+				3FDB679A18EA3E4C00BAB01E /* GameDetailViewController.m */,
+				3FDB679B18EA3E4C00BAB01E /* GameDetailViewController.xib */,
+				3FDB679E18EA4A2200BAB01E /* GameCardViewController.h */,
+				3FDB679F18EA4A2200BAB01E /* GameCardViewController.m */,
+				3FDB67A018EA4A2200BAB01E /* GameCardViewController.xib */,
+			);
+			path = WebRequest;
+			sourceTree = "<group>";
+		};
+		3FDE781B18D7B498009916F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FDE781C18D7B498009916F0 /* WebRequest-Info.plist */,
+				3FDE781D18D7B498009916F0 /* InfoPlist.strings */,
+				3FDE782018D7B498009916F0 /* main.m */,
+				3FDE782218D7B498009916F0 /* WebRequest-Prefix.pch */,
+				3FDE782618D7B498009916F0 /* Default.png */,
+				3FDE782818D7B498009916F0 /* Default@2x.png */,
+				3FDE782A18D7B498009916F0 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FDE780F18D7B498009916F0 /* WebRequest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FDE782E18D7B498009916F0 /* Build configuration list for PBXNativeTarget "WebRequest" */;
+			buildPhases = (
+				3FDE780C18D7B498009916F0 /* Sources */,
+				3FDE780D18D7B498009916F0 /* Frameworks */,
+				3FDE780E18D7B498009916F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebRequest;
+			productName = WebRequest;
+			productReference = 3FDE781018D7B498009916F0 /* WebRequest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FDE780718D7B498009916F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = FVTC;
+			};
+			buildConfigurationList = 3FDE780A18D7B498009916F0 /* Build configuration list for PBXProject "WebRequest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3FDE780518D7B498009916F0;
+			productRefGroup = 3FDE781118D7B498009916F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FDE780F18D7B498009916F0 /* WebRequest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FDE780E18D7B498009916F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FDE781F18D7B498009916F0 /* InfoPlist.strings in Resources */,
+				3FDE782718D7B498009916F0 /* Default.png in Resources */,
+				3FDE782918D7B498009916F0 /* Default@2x.png in Resources */,
+				3FDE782B18D7B498009916F0 /* Default-568h@2x.png in Resources */,
+				3FDE783518D7B4D2009916F0 /* MainViewController.xib in Resources */,
+				3FCF527618E0F69600FC3AD7 /* LoginViewController.xib in Resources */,
+				3FDB679D18EA3E4C00BAB01E /* GameDetailViewController.xib in Resources */,
+				3FDB67A218EA4A2200BAB01E /* GameCardViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FDE780C18D7B498009916F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FDE782118D7B498009916F0 /* main.m in Sources */,
+				3FDE782518D7B498009916F0 /* AppDelegate.m in Sources */,
+				3FDE783418D7B4D2009916F0 /* MainViewController.m in Sources */,
+				3FDE783818D7B532009916F0 /* Game.m in Sources */,
+				3FCF527518E0F69600FC3AD7 /* LoginViewController.m in Sources */,
+				97F59DEF18E13C7600E89229 /* NSData+Base64.m in Sources */,
+				3F1B39C718EA284F00B9B20E /* GameStore.m in Sources */,
+				3FDB679718EA337500BAB01E /* User.m in Sources */,
+				3FDB679C18EA3E4C00BAB01E /* GameDetailViewController.m in Sources */,
+				3FDB67A118EA4A2200BAB01E /* GameCardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3FDE781D18D7B498009916F0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FDE781E18D7B498009916F0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FDE782C18D7B498009916F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3FDE782D18D7B498009916F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FDE782F18D7B498009916F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebRequest/WebRequest-Prefix.pch";
+				INFOPLIST_FILE = "WebRequest/WebRequest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3FDE783018D7B498009916F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebRequest/WebRequest-Prefix.pch";
+				INFOPLIST_FILE = "WebRequest/WebRequest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FDE780A18D7B498009916F0 /* Build configuration list for PBXProject "WebRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FDE782C18D7B498009916F0 /* Debug */,
+				3FDE782D18D7B498009916F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FDE782E18D7B498009916F0 /* Build configuration list for PBXNativeTarget "WebRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FDE782F18D7B498009916F0 /* Debug */,
+				3FDE783018D7B498009916F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FDE780718D7B498009916F0 /* Project object */;
+}
