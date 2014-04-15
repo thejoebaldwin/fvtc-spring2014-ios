@@ -316,9 +316,19 @@ NSString const *_hostname = @"http://itweb.fvtc.edu/kingbingo/service/v0";
     completion = block;
     NSString *image = [GameStore ImageToNSString:profileImage];
     NSString *json = [[NSString alloc] initWithFormat:
-                      @"{\"user_id\":\"%i\",\"authentication_token\":\"%@\", \"profile_image\":\"%@\"}",
+                      @"{\"user_id\":\"%i\",\"authentication_token\":\"%@\", \"user\":{ \"profile_image\":\"%@\"}}",
                       _userID, _authToken, image];
   
+    [self PostDataWithOperation:@"updateuser" withJSON:json];
+}
+
+-(void) UpdateProfileLocation:(float) latitude withLongitude:(float) longitude withBlock:(void(^)(void)) block
+{
+    completion = block;
+    NSString *json = [[NSString alloc] initWithFormat:
+                      @"{\"user_id\":\"%i\",\"authentication_token\":\"%@\", \"user\":{ \"location\":\"%+.6f,%+.6f\"}}",
+                      _userID, _authToken, latitude, longitude];
+    
     [self PostDataWithOperation:@"updateuser" withJSON:json];
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-
+#import "CameraViewController.h"
 #import "GameStore.h"
 #import "MainViewController.h"
 
@@ -68,7 +68,11 @@ bool _firstTime = YES;
     void (^block)(void) = ^{
         NSLog(@"LoginViewController Authenticate Complete");
         _main = [[MainViewController alloc] init];
-        [[self navigationController] pushViewController:_main animated:YES];
+        //added this 4/14
+        CameraViewController *camera = [[CameraViewController alloc] init];
+        //[[self navigationController] pushViewController:_main animated:YES];
+        //use camera instead
+        [[self navigationController] pushViewController:camera animated:YES];
     };
     
     [[GameStore SharedStore] Authenticate:username withPassword:password  withBlock:block];
