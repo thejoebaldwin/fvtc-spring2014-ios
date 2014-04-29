@@ -9,7 +9,7 @@
 
 #import "SuperheroStore.h"
 #import "Hero.h"
-
+#import "Hero+Methods.h"
 #import <CoreData/CoreData.h>
 
 @implementation SuperheroStore

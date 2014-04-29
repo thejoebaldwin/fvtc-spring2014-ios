@@ -19,6 +19,6 @@
 @property (nonatomic, retain) NSString * power;
 @property (nonatomic, retain) NSString * secret;
 
--(void) RandomizeHero;
+
 
 @end

@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "SuperheroStore.h"
 #import "Hero.h"
+#import "Hero+Methods.h"
 #import "DetailViewController.h"
 
 @interface MainViewController ()

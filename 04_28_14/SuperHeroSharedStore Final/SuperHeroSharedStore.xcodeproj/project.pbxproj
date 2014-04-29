@@ -24,6 +24,7 @@
 		3F34BA9818C54E890024D10F /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F34BA9618C54E890024D10F /* DetailViewController.xib */; };
 		3F3EE5E4190F114B004B1489 /* Hero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F3EE5E2190F114B004B1489 /* Hero.xcdatamodeld */; };
 		3F3EE5E9190F16C8004B1489 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3EE5E8190F16C8004B1489 /* CoreData.framework */; };
+		3F50243A190F351600F810BE /* Hero+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F502439190F351600F810BE /* Hero+Methods.m */; };
 		3FCA0F30190F2CC4006FC7C5 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCA0F2F190F2CC4006FC7C5 /* Hero.m */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,8 @@
 		3F34BA9618C54E890024D10F /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		3F3EE5E3190F114B004B1489 /* Hero.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hero.xcdatamodel; sourceTree = "<group>"; };
 		3F3EE5E8190F16C8004B1489 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3F502438190F351600F810BE /* Hero+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Hero+Methods.h"; sourceTree = "<group>"; };
+		3F502439190F351600F810BE /* Hero+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Hero+Methods.m"; sourceTree = "<group>"; };
 		3FCA0F2E190F2CC4006FC7C5 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
 		3FCA0F2F190F2CC4006FC7C5 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +122,8 @@
 				3F3EE5E2190F114B004B1489 /* Hero.xcdatamodeld */,
 				3FCA0F2E190F2CC4006FC7C5 /* Hero.h */,
 				3FCA0F2F190F2CC4006FC7C5 /* Hero.m */,
+				3F502438190F351600F810BE /* Hero+Methods.h */,
+				3F502439190F351600F810BE /* Hero+Methods.m */,
 			);
 			path = SuperHeroSharedStore;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 				3F3EE5E4190F114B004B1489 /* Hero.xcdatamodeld in Sources */,
 				3F1D757A18BC24730047F76E /* superhero.m in Sources */,
 				3F34BA9718C54E890024D10F /* DetailViewController.m in Sources */,
+				3F50243A190F351600F810BE /* Hero+Methods.m in Sources */,
 				3FCA0F30190F2CC4006FC7C5 /* Hero.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

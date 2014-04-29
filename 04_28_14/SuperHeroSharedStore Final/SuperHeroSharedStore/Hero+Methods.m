@@ -1,23 +1,14 @@
 //
-//  Hero.m
+//  Hero+Methods.m
 //  SuperHeroSharedStore
 //
 //  Created by student on 4/28/14.
 //  Copyright (c) 2014 fvtc. All rights reserved.
 //
 
-#import "Hero.h"
+#import "Hero+Methods.h"
 
-
-@implementation Hero
-
-@dynamic age;
-@dynamic heroId;
-@dynamic image;
-@dynamic name;
-@dynamic power;
-@dynamic secret;
-
+@implementation Hero (Methods)
 
 
 -(void) RandomizeHero
@@ -113,7 +104,7 @@
     self.heroId =  [[NSNumber alloc] initWithInt: (arc4random() % 100)];
     
     
- }
+}
 
 
 
