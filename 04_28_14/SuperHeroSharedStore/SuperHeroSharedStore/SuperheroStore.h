@@ -12,7 +12,13 @@
 @interface SuperheroStore : NSObject
 {
     NSMutableArray *_superHeroes;
+    NSMutableArray *_heroes;
 }
+
+//added 4/28
+@property (nonatomic, strong) NSManagedObjectContext *context;
+@property (nonatomic, strong) NSManagedObjectModel *model;
+
 
 + (SuperheroStore *) SharedStore;
 - (void) AddSuperhero:(Superhero *) superhero;
